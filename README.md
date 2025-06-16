@@ -1,6 +1,6 @@
 # TinyLLaMA GUI Chatbot
 
-A lightweight chatbot project using [TinyLLaMA](https://huggingface.co/cognitivecomputations/TinyLlama-1.1B) running through [`llama.cpp`](https://github.com/ggerganov/llama.cpp) with a simple web GUI interface in Docker.
+A lightweight chatbot project using [TinyLLaMA](https://huggingface.co/cognitivecomputations/TinyLlama-1.1B) running through [`llama.cpp`](https://github.com/ggerganov/llama.cpp) with a simple web GUI interface in Docker.  
 
 ## 🚀 Features
 
