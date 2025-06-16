@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TinyLlama Chat</title>
+  <style>
+    body { font-family: sans-serif; padding: 2rem; max-width: 600px; margin: auto; }
+    textarea { width: 100%; height: 100px; }
+    pre { background: #f3f3f3; padding: 1rem; white-space: pre-wrap; }
+    button { margin-top: 1rem; }
+  </style>
+</head>
+<body>
+  <h1>TinyLlama Chat</h1>
+  <textarea id="prompt" placeholder="Ask TinyLlama something..."></textarea>
+  <br />
+  <button onclick="sendPrompt()">Send</button>
+  <h3>Response:</h3>
+  <pre id="response"></pre>
+
+  <script>
+    async function sendPrompt() {
+      const prompt = document.getElementById('prompt').value;
+      const res = await fetch('http://localhost:8080/completion', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ prompt, n_predict: 128, temperature: 0.7 })
+      });
+      const data = await res.json();
+      document.getElementById('response').textContent = data.content || "(no response)";
+    }
+  </script>
+</body>
+</html>
