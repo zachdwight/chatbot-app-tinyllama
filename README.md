@@ -16,8 +16,8 @@ A lightweight chatbot project using [TinyLLaMA](https://huggingface.co/cognitive
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-username/tinyllama-gui.git
-cd tinyllama-gui
+git clone https://github.com/zachdwight/chatbot-app-tinyllama.git
+cd chatbot-app-tinyllama
 ```
 
 ### 2. Download a model
@@ -94,7 +94,7 @@ A minimal HTML frontend is included, served on port 8081 inside the container. I
 ## 📁 Project Structure
 
 ```
-tinyllama-gui/
+chatbot-app-tinyllama/
 ├── Dockerfile
 ├── supervisord.conf
 ├── llama.cpp/             # Cloned and built llama.cpp
