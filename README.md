@@ -80,6 +80,7 @@ curl -X POST http://localhost:8080/completion \
 ## 🖼️ GUI
 
 A minimal HTML frontend is included, served on port 8081 inside the container. It provides a textbox and button to enter prompts and view LLaMA's responses.
+![image](https://github.com/user-attachments/assets/fd73af7d-7c83-4abb-8de8-8801a975db62)
 
 ---
 
