@@ -115,4 +115,4 @@ chatbot-app-tinyllama/
 MIT — but credit to:
 
 - [llama.cpp](https://github.com/ggerganov/llama.cpp)
-- [TinyLLaMA]([https://huggingface.co/cognitivecomputations/TinyLlama-1.1B](https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF)
+- [TinyLLaMA](https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF)
